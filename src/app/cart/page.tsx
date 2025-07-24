@@ -17,6 +17,7 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { toast } from "sonner";
 import { useCartStore } from "@/lib/store/useCartStore";
+import { useCallback } from "react";
 
 export default function CartPage() {
   const { isSignedIn, userId, getToken } = useAuth();
@@ -24,11 +25,7 @@ export default function CartPage() {
   const [isLoading, setIsLoading] = useState(true);
   const { setCartData } = useCartStore();
 
-  useEffect(() => {
-    loadCart();
-  }, [isSignedIn, userId]);
-
-  const loadCart = async () => {
+  const loadCart = useCallback(async () => {
     setIsLoading(true);
     try {
       let user_id: string | undefined;
@@ -38,7 +35,7 @@ export default function CartPage() {
         user_id = userId;
         token = (await getToken()) ?? undefined;
       } else {
-        user_id = isSignedIn && userId ? userId : getEffectiveUserId();
+        user_id = getEffectiveUserId();
       }
 
       await cleanCartStock(user_id, token);
@@ -55,8 +52,7 @@ export default function CartPage() {
     } finally {
       setIsLoading(false);
     }
-  };
-
+  }, [isSignedIn, userId, getToken, setCartData]);
   const handleQuantityChange = async (
     itemId: number,
     newQuantity: number,
@@ -70,6 +66,10 @@ export default function CartPage() {
       console.error("Failed to update quantity", error);
     }
   };
+
+  useEffect(() => {
+    loadCart();
+  }, [loadCart]);
 
   const handleRemoveItem = async (
     itemId: number,
