@@ -13,11 +13,10 @@ export default function CartInitializer() {
   useEffect(() => {
     async function loadCartCount() {
       try {
-        let id = isSignedIn && userId ? userId : getEffectiveUserId();
+        const id = isSignedIn && userId ? userId : getEffectiveUserId();
         const token = isSignedIn ? await getToken() : undefined;
 
         const items = await getCartItems(id, token ?? undefined);
-        const count = items.reduce((acc, item) => acc + item.quantity, 0);
         setCartData(items);
       } catch (error) {
         console.error("Failed to load cart count globally", error);
@@ -25,7 +24,7 @@ export default function CartInitializer() {
     }
 
     loadCartCount();
-  }, [isSignedIn, userId]);
+  }, [isSignedIn, userId, getToken, setCartData]);
 
   return null;
 }

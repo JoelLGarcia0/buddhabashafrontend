@@ -100,7 +100,7 @@ export default function ProductDetailPage() {
       const updatedCart = await getCartItems(userId, token);
       setCartData(updatedCart);
       toast.success("Added to cart!");
-    } catch (err) {
+    } catch {
       toast.error("Failed to add to cart");
     } finally {
       setIsLoading(false);
@@ -140,10 +140,6 @@ export default function ProductDetailPage() {
             <label className="block text-sm font-medium mb-1">Size</label>
             <div className="flex flex-wrap gap-2">
               {product.variants?.map((variant) => {
-                const itemInCart = product.variants
-                  ? product.variants.find((v) => v.id === variant.id)
-                  : null;
-
                 // Pull quantity for this variant from global cart (optional optimization)
                 const cartItems = useCartStore.getState().cartItems || [];
                 const cartQtyForVariant =

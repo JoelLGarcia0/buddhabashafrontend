@@ -15,7 +15,7 @@ export default function CancelPage() {
 
         <p className="text-md text-gray-600 mb-8">
           Your order was cancelled. No charges were made to your account. Your
-          cart items are still available if you'd like to try again.
+          cart items are still available if you&apos;d like to try again.
         </p>
 
         <div className="bg-gray-50 rounded-lg p-6 mb-8">
@@ -23,8 +23,8 @@ export default function CancelPage() {
             Need Help?
           </h2>
           <p className="text-gray-600 mb-4">
-            If you encountered any issues during checkout, please don't hesitate
-            to contact our support team.
+            If you encountered any issues during checkout, please don&apos;t
+            hesitate to contact our support team.
           </p>
           <p className="text-sm text-gray-500">
             Email: support@buddhabasha.com

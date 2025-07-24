@@ -233,7 +233,10 @@ export default function CheckoutPage() {
                     be changed.
                   </>
                 ) : (
-                  <>We'll send your order confirmation to this email address.</>
+                  <>
+                    We&apos;ll send your order confirmation to this email
+                    address.
+                  </>
                 )}
               </p>
             </div>
@@ -422,7 +425,8 @@ export default function CheckoutPage() {
           {!isSignedIn && (
             <div className="mt-6 p-4 bg-blue-50 rounded-md">
               <p className="text-sm text-dark">
-                <strong>Guest Checkout:</strong> You're checking out as a guest.{" "}
+                <strong>Guest Checkout:</strong> You&apos;re checking out as a
+                guest.{" "}
                 <SignInButton mode="modal">
                   <button className="text-primary font-semibold hover:underline">
                     Sign in

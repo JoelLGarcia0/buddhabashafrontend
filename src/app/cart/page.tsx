@@ -12,7 +12,7 @@ import {
   cleanCartStock,
 } from "@/lib/api";
 import CartItem from "@/components/CartItem";
-import { Cart, CartItem as CartItemType } from "@/lib/api";
+import { CartItem as CartItemType } from "@/lib/api";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { toast } from "sonner";
@@ -20,7 +20,6 @@ import { useCartStore } from "@/lib/store/useCartStore";
 
 export default function CartPage() {
   const { isSignedIn, userId, getToken } = useAuth();
-  const [cart, setCart] = useState<Cart | null>(null);
   const [cartItems, setCartItems] = useState<CartItemType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const { setCartData } = useCartStore();
@@ -39,17 +38,16 @@ export default function CartPage() {
         user_id = userId;
         token = (await getToken()) ?? undefined;
       } else {
-        // generate guest_id
         user_id = isSignedIn && userId ? userId : getEffectiveUserId();
       }
+
       await cleanCartStock(user_id, token);
 
-      const [cartData, itemsData] = await Promise.all([
+      const [_, itemsData] = await Promise.all([
         getCart(user_id, token),
         getCartItems(user_id, token),
       ]);
 
-      setCart(cartData);
       setCartItems(itemsData);
       setCartData(itemsData);
     } catch (error) {
@@ -130,7 +128,7 @@ export default function CartPage() {
               Your cart is empty
             </h2>
             <p className="text-gray-600 mb-6">
-              Looks like you haven't added any items to your cart yet.
+              Looks like you haven'&apos;'t added any items to your cart yet.
             </p>
             <Link
               href="/products"

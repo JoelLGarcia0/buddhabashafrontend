@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { getProducts, getCategories, getEffectiveUserId } from "@/lib/api";
+import { getProducts, getCategories } from "@/lib/api";
 import ProductCard from "@/components/ProductCard";
 import { Product, Category } from "@/lib/api";
 

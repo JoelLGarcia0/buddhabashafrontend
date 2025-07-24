@@ -5,6 +5,7 @@ import { useAuth } from "@clerk/nextjs";
 import { getOrders } from "@/lib/api";
 import { Order } from "@/lib/api";
 import OrderCard from "@/components/OrderCard";
+import Link from "next/link";
 
 export default function OrdersPage() {
   const { isSignedIn, userId, getToken } = useAuth();
@@ -102,15 +103,15 @@ export default function OrdersPage() {
               No orders yet
             </h2>
             <p className="text-gray-600 mb-6">
-              You haven't placed any orders yet. Start shopping to see your
+              You haven&apos;t placed any orders yet. Start shopping to see your
               order history here.
             </p>
-            <a
+            <Link
               href="/products"
               className="inline-flex items-center justify-center bg-primary text-white px-6 py-3 rounded-md shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               Start Shopping
-            </a>
+            </Link>
           </div>
         </div>
       ) : (
