@@ -43,7 +43,7 @@ export default function CartPage() {
 
       await cleanCartStock(user_id, token);
 
-      const [_, itemsData] = await Promise.all([
+      const [, itemsData] = await Promise.all([
         getCart(user_id, token),
         getCartItems(user_id, token),
       ]);
@@ -128,7 +128,7 @@ export default function CartPage() {
               Your cart is empty
             </h2>
             <p className="text-gray-600 mb-6">
-              Looks like you haven'&apos;'t added any items to your cart yet.
+              Looks like you haven&apos;t added any items to your cart yet.
             </p>
             <Link
               href="/products"

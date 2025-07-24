@@ -1,5 +1,3 @@
-import { User } from "@clerk/nextjs/server";
-
 const API_BASE_URL = "http://localhost:8000/store";
 
 // Types
