@@ -240,7 +240,7 @@ export async function getCartItems(
 export async function cleanCartStock(
   clerk_user_id: string,
   token?: string
-): Promise<{ message: string; updates: any[] }> {
+): Promise<{ message: string; updates: unknown[] }> {
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
   };
