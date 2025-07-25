@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8000/store";
+const API_BASE_URL = "https://buddhabashabackend.onrender.com/store";
 
 // Types
 
