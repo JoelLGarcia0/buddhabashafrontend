@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Great_Vibes } from "next/font/google";
 import "../styles/globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
@@ -19,6 +19,13 @@ export const playfair = Playfair_Display({
   display: "swap",
 });
 
+export const greatvibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-greatvibes",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "BuddhaBasha - Handcrafted Jewelry",
   description: "Discover beautiful handcrafted jewelry at BuddhaBasha",
@@ -33,7 +40,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body
-          className={`${inter.variable} ${playfair.variable} antialiased bg-lightgray`}
+          className={`${inter.variable} ${playfair.variable} ${greatvibes.variable} antialiased bg-lightgray`}
         >
           <div className="flex flex-col min-h-screen">
             <Navbar />
