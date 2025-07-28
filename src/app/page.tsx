@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30 z-0" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-10 sm:px-8 pt-8">
+        <div className="relative z-10 max-w-6xl mx-auto px-8 pt-8">
           <div className="max-w-lg text-left">
             <p className="text-sm text-white/70 uppercase tracking-widest mb-2">
               Made with Meaning
