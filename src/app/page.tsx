@@ -7,7 +7,7 @@ export default function Home() {
     <div className="space-y-16">
       {/* Hero Section */}
       <section
-        className="-mt-8 relative w-full h-[90vh] bg-cover bg-bottom
+        className="-mt-8 -mx-4 sm:-mx-6 lg:mx-0 relative lg:w-full w-screen h-[90vh] bg-cover bg-bottom
        bg-no-repeat bg-[url('/images/buddhabashahero.jpg')]"
       >
         {/* Overlay */}
@@ -25,22 +25,22 @@ export default function Home() {
                 Soul
               </span>
             </h1>
-            <p className="text-white text-lg mb-6">
+            <p className="text-white text-md md:text-lg mb-6">
               Discover unique, beautifully crafted jewelry pieces that tell your
               story. Each piece is carefully made with love and attention to
               detail.
             </p>
-            <div className="flex flex-col gap-4 items-start w-full max-w-[170px]">
+            <div className="flex flex-col gap-4 items-start w-full max-w-[150px]">
               <Link
                 href="/products"
-                className="w-full inline-flex items-center justify-center bg-primary text-white px-6 py-4 rounded-md shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="w-full text-sm inline-flex items-center justify-center bg-primary text-white px-6 py-4 rounded-md shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 Shop Now
                 <ArrowRightIcon className="ml-2 w-5 h-5" />
               </Link>
               <Link
                 href="/cart"
-                className="w-full inline-flex items-center justify-center bg-white border border-gray-200 text-black px-6 py-3 rounded-md shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                className="w-full text-sm inline-flex items-center justify-center bg-white border border-gray-200 text-black px-6 py-3 rounded-md shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               >
                 View Cart
               </Link>
