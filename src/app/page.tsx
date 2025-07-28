@@ -6,15 +6,12 @@ export default function Home() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section
-        className="-mt-8 -mx-4 sm:-mx-6 lg:mx-0 relative lg:w-full w-screen h-[90vh] bg-cover bg-bottom
-       bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]"
-      >
+      <section className="relative w-full min-h-[550px] lg:h-[60vh] bg-cover bg-bottom bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/30 z-0" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-8 pt-8">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-8">
           <div className="max-w-lg text-left">
             <p className="text-sm text-white/70 uppercase tracking-widest mb-2">
               Made with Meaning
