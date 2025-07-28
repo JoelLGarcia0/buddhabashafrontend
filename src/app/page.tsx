@@ -8,10 +8,10 @@ export default function Home() {
       {/* Hero Section */}
       <section
         className="-mt-8 -mx-4 sm:-mx-6 lg:mx-0 relative lg:w-full w-screen h-[90vh] bg-cover bg-bottom
-       bg-no-repeat bg-[url('/images/buddhabashahero.jpg')]"
+       bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]"
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 z-0" />
+        <div className="absolute inset-0 bg-black/30 z-0" />
 
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-10 sm:px-8 pt-8">
