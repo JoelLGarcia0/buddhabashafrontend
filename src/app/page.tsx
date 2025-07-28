@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[550px] lg:h-[60vh] bg-cover bg-bottom bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]">
+      <section className="-mt-2 relative w-full min-h-[550px] lg:h-[60vh] bg-cover bg-bottom bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/30 z-0" />
 
