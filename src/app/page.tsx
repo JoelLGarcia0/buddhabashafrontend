@@ -4,9 +4,9 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-10">
       {/* Hero Section */}
-      <section className="-mt-2 relative w-full min-h-[550px] lg:h-[60vh] bg-cover bg-bottom bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]">
+      <section className="-mt-8 -mx-4 sm:-mx-6 md:w-full md:-mx-0 relative w-screen min-h-[450px] lg:h-[55vh] bg-cover bg-bottom bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/30 z-0" />
 
@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-secondary rounded-lg shadow-md">
+      <section className="py-12 bg-secondary rounded-lg shadow-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -138,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="text-center py-16 bg-light shadow-md rounded-lg">
+      <section className="text-center py-12 bg-light shadow-md rounded-lg">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-black mb-4">
             Ready to Find Your Perfect Piece?
@@ -157,7 +157,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-white shadow-md rounded-lg">
+      <section className="py-12 bg-white shadow-md rounded-lg">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -197,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* Follow Us Section */}
-      <section className="py-10 bg-lightgray text-center">
+      <section className="py-8 bg-lightgray text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Stay Connected with Us
