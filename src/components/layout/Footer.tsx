@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="w-full bg-secondary border-t border-light mt-4 py-4">
       <div className="max-w-6xl mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-6">
           {/* Company Info */}
 
           <div className="space-y-3">

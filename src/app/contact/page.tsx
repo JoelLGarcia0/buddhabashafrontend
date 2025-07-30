@@ -97,7 +97,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-700">support@buddhabasha.com</p>
+                  <p className="text-gray-700">buddhabashajewelry@gmail.com</p>
                   <p className="text-sm text-gray-600">
                     We typically respond within 24 hours
                   </p>
@@ -151,9 +151,6 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-gray-900">Location</h3>
                   <p className="text-gray-700">Online Store</p>
-                  <p className="text-sm text-gray-600">
-                    Serving customers worldwide
-                  </p>
                 </div>
               </div>
             </div>
