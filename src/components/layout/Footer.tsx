@@ -11,25 +11,29 @@ const Footer = () => {
           {/* Company Info */}
 
           <div className="space-y-3">
-            <h3 className="font-semibold text-black">Buddha Basha Jewelry</h3>
-            <p className="text-sm text-gray-600">
+            <h3 className="font-semibold text-sm text-black">
+              Buddha Basha Jewelry
+            </h3>
+            <p className="text-xs text-gray-600">
               Handcrafted jewelry for the mindful soul.
             </p>
             <a
               href="https://instagram.com/buddhabashajewelry"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-sm text-gray-600 hover:text-primary transition"
+              className="flex items-center text-xs text-gray-600 hover:text-primary transition"
             >
-              <FaInstagram className="mr-1 w-6 h-6 text-dark" />
+              <FaInstagram className="mr-1 w-5 h-5 text-dark" />
               @buddhabashajewelry
             </a>
           </div>
 
           {/* Customer Service */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-black">Customer Service</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-semibold text-sm text-black">
+              Customer Service
+            </h3>
+            <ul className="space-y-2 text-xs">
               <li>
                 <Link
                   href="/contact"
@@ -59,8 +63,8 @@ const Footer = () => {
 
           {/* Legal */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-black">Legal</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-semibold text-sm text-black">Legal</h3>
+            <ul className="space-y-2 text-xs">
               <li>
                 <Link
                   href="/privacy"
@@ -90,8 +94,8 @@ const Footer = () => {
 
           {/* Account */}
           <div className="space-y-3">
-            <h3 className="font-semibold text-black">Account</h3>
-            <ul className="space-y-2 text-sm">
+            <h3 className="font-semibold text-sm text-black">Account</h3>
+            <ul className="space-y-2 text-xs">
               <li>
                 <Link
                   href="/orders"
@@ -114,11 +118,11 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-black text-sm">
+          <p className="text-black text-xs">
             © {new Date().getFullYear()} Buddha Basha Jewelry. All Rights
             Reserved.
           </p>
-          <p className="text-sm text-gray-600">
+          <p className="text-xs text-gray-600">
             Website by{" "}
             <a
               className="font-medium hover:text-primary transition-colors"
