@@ -74,7 +74,7 @@ export default function ContactPage() {
               </h2>
               <p className="text-gray-700 mb-6">
                 Have a question about our jewelry? Interested in a custom piece?
-                We'd love to hear from you!
+                We&apos;d love to hear from you!
               </p>
             </div>
 
@@ -164,8 +164,8 @@ export default function ContactPage() {
               </h3>
               <p className="text-gray-700 text-sm mb-4">
                 Looking for a unique piece? We specialize in custom jewelry
-                design. Tell us about your vision and we'll work together to
-                create something special.
+                design. Tell us about your vision and we&apos;ll work together
+                to create something special.
               </p>
               <p className="text-gray-600 text-sm">
                 Custom pieces typically take 2-4 weeks to create, depending on
@@ -183,8 +183,8 @@ export default function ContactPage() {
             {submitStatus === "success" && (
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
                 <p className="text-green-800">
-                  Thank you for your message! We'll get back to you within 24
-                  hours.
+                  Thank you for your message! We&apos;ll get back to you within
+                  24 hours.
                 </p>
               </div>
             )}

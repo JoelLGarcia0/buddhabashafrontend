@@ -52,7 +52,7 @@ export default function ShippingPolicy() {
               and viewing your order history.
             </p>
             <p>
-              If you haven't received your tracking information within 3
+              If you haven&apos;t received your tracking information within 3
               business days of placing your order, please contact us via email.
             </p>
           </section>

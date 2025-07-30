@@ -60,8 +60,8 @@ export default function FAQ() {
                 </h3>
                 <p className="text-gray-700">
                   We have typical sizes for rings and length measurements in
-                  inches for bracelets and anklets. If you're unsure, contact us
-                  for assistance.
+                  inches for bracelets and anklets. If you&apos;re unsure,
+                  contact us for assistance.
                 </p>
               </div>
 
@@ -71,8 +71,8 @@ export default function FAQ() {
                 </h3>
                 <p className="text-gray-700">
                   Yes, we offer custom jewelry design services. Please contact
-                  us with your requirements and we'll work with you to create a
-                  unique piece that meets your needs.
+                  us with your requirements and we&apos;ll work with you to
+                  create a unique piece that meets your needs.
                 </p>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function FAQ() {
                   Can I track my order?
                 </h3>
                 <p className="text-gray-700">
-                  Yes, you'll receive a tracking number via email once your
+                  Yes, you&apos;ll receive a tracking number via email once your
                   order ships. You can also track your order by logging into
                   your account and viewing your order history.
                 </p>
@@ -157,9 +157,9 @@ export default function FAQ() {
                   How do I return an item?
                 </h3>
                 <p className="text-gray-700">
-                  Contact us via email within 30 days of purchase. We'll provide
-                  you with a return shipping label and instructions. Return
-                  shipping costs are the responsibility of the customer.
+                  Contact us via email within 30 days of purchase. We&apos;ll
+                  provide you with a return shipping label and instructions.
+                  Return shipping costs are the responsibility of the customer.
                 </p>
               </div>
             </div>
@@ -234,8 +234,9 @@ export default function FAQ() {
               Still Have Questions?
             </h2>
             <p className="text-gray-700 mb-4">
-              If you couldn't find the answer you're looking for, please don't
-              hesitate to contact us. Our customer service team is here to help!
+              If you couldn&apos;t find the answer you&apos;re looking for,
+              please don&apos;t hesitate to contact us. Our customer service
+              team is here to help!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

@@ -106,7 +106,7 @@ export default function ReturnPolicy() {
               <li>All returns must be initiated within 30 days of purchase</li>
               <li>Items must be in original, unworn condition</li>
               <li>
-                We reserve the right to refuse returns that don't meet our
+                We reserve the right to refuse returns that don&apos;t meet our
                 policy
               </li>
               <li>This policy does not affect your statutory rights</li>

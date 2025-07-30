@@ -25,8 +25,8 @@ export default function TermsOfService() {
             </h2>
             <p className="mb-4">
               Permission is granted to temporarily download one copy of the
-              materials (information or software) on BuddhaBasha's website for
-              personal, non-commercial transitory viewing only.
+              materials (information or software) on BuddhaBasha&apos;s website
+              for personal, non-commercial transitory viewing only.
             </p>
             <p className="mb-4">
               This is the grant of a license, not a transfer of title, and under
@@ -116,13 +116,13 @@ export default function TermsOfService() {
               7. Disclaimer
             </h2>
             <p>
-              The materials on BuddhaBasha Jewelry's website are provided on an
-              'as is' basis. BuddhaBasha Jewelry makes no warranties, expressed
-              or implied, and hereby disclaims and negates all other warranties
-              including without limitation, implied warranties or conditions of
-              merchantability, fitness for a particular purpose, or
-              non-infringement of intellectual property or other violation of
-              rights.
+              The materials on BuddhaBasha Jewelry&apos;s website are provided
+              on an &apos;as is&apos; basis. BuddhaBasha Jewelry makes no
+              warranties, expressed or implied, and hereby disclaims and negates
+              all other warranties including without limitation, implied
+              warranties or conditions of merchantability, fitness for a
+              particular purpose, or non-infringement of intellectual property
+              or other violation of rights.
             </p>
           </section>
 

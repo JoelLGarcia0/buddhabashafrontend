@@ -102,7 +102,7 @@ export default function PrivacyPolicy() {
             <p>
               We may update this Privacy Policy from time to time. We will
               notify you of any changes by posting the new policy on this page
-              and updating the "Last Updated" date.
+              and updating the &quot;Last Updated&quot; date.
             </p>
             <p className="mt-4 text-sm text-gray-600">
               Last Updated: {new Date().toLocaleDateString()}
