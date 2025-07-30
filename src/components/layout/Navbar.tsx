@@ -52,6 +52,12 @@ export default function Navbar() {
               >
                 Products
               </Link>
+              <Link
+                href="/contact"
+                className="text-dark hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              >
+                Contact Us
+              </Link>
               <SignedIn>
                 <Link
                   href="/orders"
@@ -122,6 +128,13 @@ export default function Navbar() {
                       className="block text-sm px-3 py-2 rounded-md hover:bg-gray-100 text-dark"
                     >
                       Products
+                    </Link>
+                    <Link
+                      href="/contact"
+                      onClick={() => setMenuOpen(false)}
+                      className="block text-sm px-3 py-2 rounded-md hover:bg-gray-100 text-dark"
+                    >
+                      Contact Us
                     </Link>
                     <SignInButton mode="modal">
                       <button

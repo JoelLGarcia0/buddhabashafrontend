@@ -55,7 +55,7 @@ export default function ProductsPage() {
   return (
     <div className="space-y-8">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">
           Our Collection
         </h1>
         <p className="text-lg text-text max-w-2xl mx-auto">
