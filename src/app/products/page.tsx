@@ -106,7 +106,13 @@ export default function ProductsPage() {
           </h2>
         </div>
 
-        {filteredProducts.length === 0 ? (
+        {products.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-gray-500 text-lg">
+              We’re still preparing our collection. New products coming soon!
+            </p>
+          </div>
+        ) : filteredProducts.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-gray-500 text-lg">
               No products in this category.
