@@ -243,24 +243,24 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-light p-6 rounded-lg shadow-md">
               <p className="text-gray-700 italic mb-4">
-                "Absolutely stunning! I get compliments every time I wear my
-                BuddhaBasha necklace. It truly feels special."
+                &quot;Absolutely stunning! I get compliments every time I wear
+                my BuddhaBasha necklace. It truly feels special.&quot;
               </p>
               <p className="text-gray-900 font-semibold">– Alyssa R.</p>
             </div>
 
             <div className="bg-light p-6 rounded-lg shadow-md">
               <p className="text-gray-700 italic mb-4">
-                "The craftsmanship is top-tier, and I love knowing each piece is
-                made with meaning. Highly recommend."
+                &quot;The craftsmanship is top-tier, and I love knowing each
+                piece is made with meaning. Highly recommend.&quot;
               </p>
               <p className="text-gray-900 font-semibold">– Jamal W.</p>
             </div>
 
             <div className="bg-light p-6 rounded-lg shadow-md">
               <p className="text-gray-700 italic mb-4">
-                "My bracelet arrived quickly and was even more beautiful in
-                person. The perfect gift — to myself!"
+                &quot;My bracelet arrived quickly and was even more beautiful in
+                person. The perfect gift — to myself!&quot;
               </p>
               <p className="text-gray-900 font-semibold">– Priya S.</p>
             </div>
