@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 type ShowcaseCardProps = {
   image: string;
@@ -21,7 +21,7 @@ const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
   return (
     <div
       className={`relative group overflow-hidden hover:shadow-xl active:shadow-xl focus-within:shadow-xl transition-all duration-300 ${height}`}
-      tabIndex={0} // makes it focusable for keyboard/touch
+      tabIndex={0}
     >
       <Image
         src={image}
