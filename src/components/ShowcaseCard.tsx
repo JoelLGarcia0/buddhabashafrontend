@@ -28,10 +28,10 @@ const ShowcaseCard: React.FC<ShowcaseCardProps> = ({
         alt={alt}
         fill
         style={{ objectPosition }}
-        className="object-cover transition-transform duration-500 group-hover:scale-105 group-active:scale-105 group-focus-within:scale-105"
+        className="object-cover transition-transform duration-500 group-hover:scale-105 group-active:scale-105 group-focus-within:scale-105 will-change-transform"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100 group-focus-within:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100 group-focus-within:opacity-100 will-change-opacity" />
 
       <div className="absolute bottom-3 left-3 right-3 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-active:opacity-100 group-focus-within:opacity-100">
         <h3 className="text-sm font-semibold mb-1">{title}</h3>

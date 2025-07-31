@@ -172,6 +172,7 @@ export default function Home() {
                 title="Lapis Links"
                 subtitle="Bold lapis centerpiece with chain detail"
                 objectPosition="bottom"
+                height="full"
               />
               <ShowcaseCard
                 image="/images/jewel6.jpg"
@@ -179,18 +180,21 @@ export default function Home() {
                 title="Turquoise Bloom"
                 subtitle="Vibrant stones framed in beaded silver"
                 objectPosition="center 65%"
+                height="full"
               />
               <ShowcaseCard
                 image="/images/jewel2.jpg"
                 alt="Pearl Teardrop Earrings"
                 title="Moonlit Drops"
                 subtitle="Lustrous pearls for evening elegance"
+                height="full"
               />
               <ShowcaseCard
                 image="/images/jewel5.jpg"
                 alt="Raw Crystal Cuffs"
                 title="Earthbound Energy"
                 subtitle="Raw gemstones on suede and silver"
+                height="full"
               />
             </div>
 
