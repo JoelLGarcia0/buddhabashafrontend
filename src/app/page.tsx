@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { FaInstagram } from "react-icons/fa";
+import ShowcaseCard from "@/components/ShowcaseCard";
 
 export default function Home() {
   return (
@@ -79,8 +80,8 @@ export default function Home() {
                 Handcrafted with Love
               </h3>
               <p className="text-dark">
-                Each piece is carefully crafted by skilled artisans who pour
-                their heart into every detail.
+                I personally handcraft each piece with care, ensuring meaning
+                and beauty in every design
               </p>
             </div>
 
@@ -137,6 +138,77 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Jewelry Showcase Section */}
+
+      <section>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Curated for You
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Each piece tells a story of craftsmanship, beauty, and meaning.
+              Discover the artistry behind our handcrafted jewelry collection.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-1">
+            {/* Left Long Card */}
+            <div className="md:col-span-1">
+              <ShowcaseCard
+                image="/images/jewellong.jpg"
+                alt="Stackable Silver Rings"
+                title="Stacked Simplicity"
+                subtitle="Minimalist bands with timeless charm"
+                height="h-[400px]"
+              />
+            </div>
+
+            {/* 4 Small Cards in 2x2 grid */}
+            <div className="md:col-span-2 grid grid-cols-2 gap-1 h-[400px]">
+              <ShowcaseCard
+                image="/images/jewel1.jpg"
+                alt="Lapis Lazuli Chain Bracelet"
+                title="Lapis Links"
+                subtitle="Bold lapis centerpiece with chain detail"
+                objectPosition="bottom"
+              />
+              <ShowcaseCard
+                image="/images/jewel6.jpg"
+                alt="Turquoise Dangle Earrings"
+                title="Turquoise Bloom"
+                subtitle="Vibrant stones framed in beaded silver"
+                objectPosition="center 65%"
+              />
+              <ShowcaseCard
+                image="/images/jewel2.jpg"
+                alt="Pearl Teardrop Earrings"
+                title="Moonlit Drops"
+                subtitle="Lustrous pearls for evening elegance"
+              />
+              <ShowcaseCard
+                image="/images/jewel5.jpg"
+                alt="Raw Crystal Cuffs"
+                title="Earthbound Energy"
+                subtitle="Raw gemstones on suede and silver"
+              />
+            </div>
+
+            {/* Right Long Card */}
+            <div className="md:col-span-1">
+              <ShowcaseCard
+                image="/images/jewel7.jpg"
+                alt="Jasper Stud Earrings"
+                title="Stone & Soul"
+                subtitle="Handmade jasper studs with natural tones"
+                height="h-[400px]"
+                objectPosition="center 30%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="text-center py-12 bg-light shadow-md rounded-lg">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,24 +243,24 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-light p-6 rounded-lg shadow-md">
               <p className="text-gray-700 italic mb-4">
-                “Absolutely stunning! I get compliments every time I wear my
-                BuddhaBasha necklace. It truly feels special.”
+                "Absolutely stunning! I get compliments every time I wear my
+                BuddhaBasha necklace. It truly feels special."
               </p>
               <p className="text-gray-900 font-semibold">– Alyssa R.</p>
             </div>
 
             <div className="bg-light p-6 rounded-lg shadow-md">
               <p className="text-gray-700 italic mb-4">
-                “The craftsmanship is top-tier, and I love knowing each piece is
-                made with meaning. Highly recommend.”
+                "The craftsmanship is top-tier, and I love knowing each piece is
+                made with meaning. Highly recommend."
               </p>
               <p className="text-gray-900 font-semibold">– Jamal W.</p>
             </div>
 
             <div className="bg-light p-6 rounded-lg shadow-md">
               <p className="text-gray-700 italic mb-4">
-                “My bracelet arrived quickly and was even more beautiful in
-                person. The perfect gift — to myself!”
+                "My bracelet arrived quickly and was even more beautiful in
+                person. The perfect gift — to myself!"
               </p>
               <p className="text-gray-900 font-semibold">– Priya S.</p>
             </div>
