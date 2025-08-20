@@ -2,14 +2,23 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { FaInstagram } from "react-icons/fa";
 import ShowcaseCard from "@/components/ShowcaseCard";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="space-y-10">
       {/* Hero Section */}
-      <section className="-mt-8 -mx-4 sm:-mx-6 md:w-full md:-mx-0 relative w-screen min-h-[450px] lg:h-[55vh] bg-cover bg-bottom bg-no-repeat bg-[url('/images/buddhabashahero3.jpg')]">
+      <section className="-mt-8 -mx-4 sm:-mx-6 md:w-full md:-mx-0 relative w-screen min-h-[525px] lg:h-[55vh]">
+        {/* Background Image */}
+        <Image
+          src="/images/buddhabashahero3.jpg"
+          alt="BuddhaBasha Hero Background"
+          fill
+          priority
+          className="object-cover object-bottom"
+        />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30 z-0" />
+        <div className="absolute inset-0 bg-black/45 z-0" />
 
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 pt-8">
@@ -23,7 +32,7 @@ export default function Home() {
                 Soul
               </span>
             </h1>
-            <p className="text-white text-md md:text-lg mb-6">
+            <p className="text-white text-md md:text-lg mb-8">
               Discover unique, beautifully crafted jewelry pieces that tell your
               story. Each piece is carefully made with love and attention to
               detail.
@@ -55,7 +64,7 @@ export default function Home() {
               Why Choose BuddhaBasha?
             </h2>
             <p className="text-lg text-text">
-              We believe in creating jewelry that speaks to your heart
+              I believe in creating jewelry that speaks to your heart
             </p>
           </div>
 
@@ -105,7 +114,7 @@ export default function Home() {
                 Quality Guaranteed
               </h3>
               <p className="text-dark">
-                We use only the finest materials and stand behind the quality of
+                I use only the finest materials and stand behind the quality of
                 every piece we create.
               </p>
             </div>
