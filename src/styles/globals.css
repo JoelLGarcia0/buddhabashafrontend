@@ -145,3 +145,9 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.break-inside-avoid {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+}

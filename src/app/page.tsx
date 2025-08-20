@@ -174,63 +174,59 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-1">
-            <div className="md:col-span-1">
-              <ShowcaseCard
-                image="/images/jewellong.jpg"
-                alt="Stackable Silver Rings"
-                title="Stacked Simplicity"
-                subtitle="Minimalist bands with timeless charm"
-                height="h-[400px]"
-              />
-            </div>
-            <div className="md:col-span-2 grid grid-cols-2 gap-1">
-              <div>
-                <ShowcaseCard
-                  image="/images/jewel1.jpg"
-                  alt="Lapis Lazuli Chain Bracelet"
-                  title="Lapis Links"
-                  subtitle="Bold lapis centerpiece with chain detail"
-                  objectPosition="bottom"
-                />
-              </div>
-              <div>
-                <ShowcaseCard
-                  image="/images/jewel6.jpg"
-                  alt="Turquoise Dangle Earrings"
-                  title="Turquoise Bloom"
-                  subtitle="Vibrant stones framed in beaded silver"
-                  objectPosition="center 65%"
-                />
-              </div>
-              <div>
-                <ShowcaseCard
-                  image="/images/jewel2.jpg"
-                  alt="Pearl Teardrop Earrings"
-                  title="Moonlit Drops"
-                  subtitle="Lustrous pearls for evening elegance"
-                />
-              </div>
-              <div>
-                <ShowcaseCard
-                  image="/images/jewel5.jpg"
-                  alt="Raw Crystal Cuffs"
-                  title="Earthbound Energy"
-                  subtitle="Raw gemstones on suede and silver"
-                />
-              </div>
-            </div>
+          {/* Masonry showcase */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-2">
+            {[
+              {
+                image: "/images/jewellong.png",
+                alt: "Stackable Silver Rings",
+                title: "Stacked Simplicity",
+                subtitle: "Minimalist bands with timeless charm",
+              },
+              {
+                image: "/images/jewel1.jpg",
+                alt: "Lapis Lazuli Chain Bracelet",
+                title: "Lapis Links",
+                subtitle: "Bold lapis centerpiece with chain detail",
+              },
 
-            <div className="md:col-span-1">
-              <ShowcaseCard
-                image="/images/jewel7.jpg"
-                alt="Jasper Stud Earrings"
-                title="Stone & Soul"
-                subtitle="Handmade jasper studs with natural tones"
-                height="h-[400px]"
-                objectPosition="center 30%"
-              />
-            </div>
+              {
+                image: "/images/jewel2.jpg",
+                alt: "Pearl Teardrop Earrings",
+                title: "Moonlit Drops",
+                subtitle: "Lustrous pearls for evening elegance",
+              },
+              {
+                image: "/images/jewel5.jpg",
+                alt: "Raw Crystal Cuffs",
+                title: "Earthbound Energy",
+                subtitle: "Raw gemstones on suede and silver",
+              },
+              {
+                image: "/images/jewel6.jpg",
+                alt: "Turquoise Dangle Earrings",
+                title: "Turquoise Bloom",
+                subtitle: "Vibrant stones framed in beaded silver",
+              },
+              {
+                image: "/images/jewel7.png",
+                alt: "Jasper Stud Earrings",
+                title: "Stone & Soul",
+                subtitle: "Handmade jasper studs with natural tones",
+              },
+            ].map((it) => (
+              <div key={it.image} className="mb-2 break-inside-avoid">
+                <ShowcaseCard
+                  variant="masonry"
+                  image={it.image}
+                  alt={it.alt}
+                  title={it.title}
+                  subtitle={it.subtitle}
+                  imgWidth={1200}
+                  imgHeight={1600}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
