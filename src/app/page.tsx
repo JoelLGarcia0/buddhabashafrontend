@@ -184,38 +184,41 @@ export default function Home() {
                 height="h-[400px]"
               />
             </div>
-
-            <div className="md:col-span-2 grid grid-cols-2 gap-1 h-[400px]">
-              <ShowcaseCard
-                image="/images/jewel1.jpg"
-                alt="Lapis Lazuli Chain Bracelet"
-                title="Lapis Links"
-                subtitle="Bold lapis centerpiece with chain detail"
-                objectPosition="bottom"
-                height="full"
-              />
-              <ShowcaseCard
-                image="/images/jewel6.jpg"
-                alt="Turquoise Dangle Earrings"
-                title="Turquoise Bloom"
-                subtitle="Vibrant stones framed in beaded silver"
-                objectPosition="center 65%"
-                height="full"
-              />
-              <ShowcaseCard
-                image="/images/jewel2.jpg"
-                alt="Pearl Teardrop Earrings"
-                title="Moonlit Drops"
-                subtitle="Lustrous pearls for evening elegance"
-                height="full"
-              />
-              <ShowcaseCard
-                image="/images/jewel5.jpg"
-                alt="Raw Crystal Cuffs"
-                title="Earthbound Energy"
-                subtitle="Raw gemstones on suede and silver"
-                height="full"
-              />
+            <div className="md:col-span-2 grid grid-cols-2 gap-1">
+              <div>
+                <ShowcaseCard
+                  image="/images/jewel1.jpg"
+                  alt="Lapis Lazuli Chain Bracelet"
+                  title="Lapis Links"
+                  subtitle="Bold lapis centerpiece with chain detail"
+                  objectPosition="bottom"
+                />
+              </div>
+              <div>
+                <ShowcaseCard
+                  image="/images/jewel6.jpg"
+                  alt="Turquoise Dangle Earrings"
+                  title="Turquoise Bloom"
+                  subtitle="Vibrant stones framed in beaded silver"
+                  objectPosition="center 65%"
+                />
+              </div>
+              <div>
+                <ShowcaseCard
+                  image="/images/jewel2.jpg"
+                  alt="Pearl Teardrop Earrings"
+                  title="Moonlit Drops"
+                  subtitle="Lustrous pearls for evening elegance"
+                />
+              </div>
+              <div>
+                <ShowcaseCard
+                  image="/images/jewel5.jpg"
+                  alt="Raw Crystal Cuffs"
+                  title="Earthbound Energy"
+                  subtitle="Raw gemstones on suede and silver"
+                />
+              </div>
             </div>
 
             <div className="md:col-span-1">
