@@ -19,7 +19,7 @@ export default function Home() {
     <div className="space-y-10">
       {/* Hero Section */}
       <motion.section
-        className="-mt-8 -mx-4 sm:-mx-6 md:w-full md:-mx-0 relative w-screen min-h-[525px] lg:h-[55vh]"
+        className="-mt-8 -mx-4 sm:-mx-6 md:w-full md:-mx-0 relative w-screen min-h-[570px] lg:h-[60vh]"
         initial="initial"
         animate="animate"
         variants={fadeUp}
